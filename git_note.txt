@@ -5,3 +5,11 @@ PS：git 中的指令有很多适合Linux相通的，例如 mkdir ,cd ,pwd 等
 2.git add file_name 将文件添加到git仓库（注意：一定要在目录下执行命令，不然是无效的。）
 3.git commit -m <备注信息message>  提交文件至仓库，其实 git commit即为提交文件至git仓库中，它可以一次提交很多个文件，-m后面说的内容是对这次提交操作的说明，方便阅读操作，信息有意义对工作有很大帮助。
 Ps: -m的m即为message（很多指令都是其英文单词对应的首字母）
+第二章 远程仓库
+1.git remote add origin git@github.com/你的账户/你建立的仓库名.git		
+Ps:origin是你给这个远程仓库（gitHub中的）定义的一个别称（git中）,它后面跟的是远程仓库的连接，注意在仓库名后署名后缀 .git
+2.git push -u origin master 将本地库文件推送到远程库origin（github中的库在git中的代称）的master branch（主分支）中
+Ps:第一次推送需要这样，之后可以直接输入指令：git push origin master
+3.git remote -v 查询远程库中的仓库信息
+4.git remote rm 仓库代号 删除git与远程库的联系 例如 git remote rm origin 删除git 与GitHub中的一个库的联系，这个库在git中的代号为origin
+Ps:一般删除前先用一下3指令，看一看详细信息，方便操作，将远程库也删除需要登录github后在github上操作。
