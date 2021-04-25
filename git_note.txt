@@ -13,3 +13,7 @@ Ps:第一次推送需要这样，之后可以直接输入指令：git push origi
 3.git remote -v 查询远程库中的仓库信息
 4.git remote rm 仓库代号 删除git与远程库的联系 例如 git remote rm origin 删除git 与GitHub中的一个库的联系，这个库在git中的代号为origin
 Ps:一般删除前先用一下3指令，看一看详细信息，方便操作，将远程库也删除需要登录github后在github上操作。
+第三章 git文件操作 
+1.git log 显示从最近到最远的提交日志，可以加上 参数 --pretty=oneline将一次提交记录显示在同一行上
+2.git reset --hard commit id 将文件版本倒回到指定的版本 commit id 即为 git log输出的每一行的第一串数字。
+3.git reflog查看命令历史，回到未来版本，前提不要关当前窗口。
