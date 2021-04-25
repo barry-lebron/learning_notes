@@ -1,0 +1,7 @@
+
+1,语法糖：
+    类似C语言中的三目运算符
+    head+sum(tail) if tail else head 是一个整体
+    比如a if a > b else b等价于max(a, b)等价于(a>b)?a:b
+    这是python的语法糖，因为早期的python程序员喜欢用各种hack来
+    实现?表达式，所以python在语法上提供了这种形式
